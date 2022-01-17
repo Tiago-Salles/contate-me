@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "29212034936",
+    "firebase_url": "https://contate-me-default-rtdb.firebaseio.com",
+    "project_id": "contate-me",
+    "storage_bucket": "contate-me.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29212034936:android:54103d14029270210e2a8d",
+        "android_client_info": {
+          "package_name": "com.example.contate_me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29212034936-3uf0ropkk1l6aibse4pprjk9b25n1qqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnZKu84gixCQ4ZP8VVEeZ3sdqcelndhok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29212034936-3uf0ropkk1l6aibse4pprjk9b25n1qqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
