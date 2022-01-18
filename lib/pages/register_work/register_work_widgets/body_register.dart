@@ -243,7 +243,8 @@ class BodyRegisterWork extends StatelessWidget {
                                 },
                               ).then(
                                 (value) {
-                                  Navigator.of(context).pushNamed("/home");
+                                  Navigator.pop(context);
+                                  Navigator.pop(context);
                                   return ScaffoldMessenger.of(context)
                                       .showSnackBar(
                                     const SnackBar(

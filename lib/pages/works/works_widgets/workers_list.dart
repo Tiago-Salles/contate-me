@@ -154,7 +154,7 @@ class WorkersList extends StatelessWidget {
                                 ),
                                 const SizedBox(width: 20),
                                 Text(
-                                  "${worker.phone}",
+                                  "${worker.cellPhone}",
                                   style: const TextStyle(
                                     color: Colors.green,
                                     fontSize: 15,
