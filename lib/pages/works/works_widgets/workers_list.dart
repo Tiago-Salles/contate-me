@@ -9,12 +9,15 @@ class WorkersList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    lauchToWhatsApp(String phone) async {
+    launchToWhatsApp(String phone) async {
       String whatsappMenssager =
           "Olá, te encontrei no app Contate-me e gostaria de saber mais sobre seus serviços.";
 
       if (!await launch(
-          "whatsapp://send?phone=+55$phone&text=$whatsappMenssager")) {
+        "whatsapp://send?phone=+55$phone&text=$whatsappMenssager",
+        forceWebView: false,
+        forceSafariVC: false,
+      )) {
         return ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text("Instale o WhatsApp para usar este recurso"),
@@ -23,13 +26,16 @@ class WorkersList extends StatelessWidget {
       }
     }
 
-    lauchToEmail(String email) async {
+    launchToEmail(String email) async {
       String mailMenssager =
           "Olá, \n\n Te encontrei no app Contate-me e gostaria de saber mais sobre seus serviços.";
       String subject = "Te econtrei no Contate-me.";
 
       if (!await launch(
-          "mailto:$email?subject=$subject=&body=$mailMenssager")) {
+        "mailto:$email?subject=$subject=&body=$mailMenssager",
+        forceWebView: false,
+        forceSafariVC: false,
+      )) {
         return ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
             content: Text("Instale o e-mail para usar este recurso"),
@@ -129,12 +135,12 @@ class WorkersList extends StatelessWidget {
                           padding: const EdgeInsets.all(3),
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            border: Border.all(color: Colors.green),
+                            border: Border.all(color: Colors.black54),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
                             onTap: () async {
-                              await lauchToWhatsApp("19987622664");
+                              await launchToWhatsApp("19987622664");
                             },
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -159,17 +165,17 @@ class WorkersList extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 20),
+                        const SizedBox(height: 10),
                         Container(
                           padding: const EdgeInsets.all(3),
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            border: Border.all(color: Colors.red),
+                            border: Border.all(color: Colors.black54),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: InkWell(
                             onTap: () async {
-                              await lauchToEmail("${worker.email}");
+                              await launchToEmail("${worker.email}");
                             },
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -194,6 +200,118 @@ class WorkersList extends StatelessWidget {
                             ),
                           ),
                         ),
+                        const SizedBox(height: 10),
+                        worker.phone != ""
+                            ? Container(
+                                padding: const EdgeInsets.all(3),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  border: Border.all(color: Colors.black54),
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: InkWell(
+                                  onTap: () async {
+                                    await launch("tel:${worker.phone}");
+                                  },
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      const SizedBox(
+                                        height: 40,
+                                        child: Icon(
+                                          Icons.phone,
+                                          color: Colors.indigoAccent,
+                                        ),
+                                      ),
+                                      const SizedBox(width: 10),
+                                      Text(
+                                        "${worker.phone}",
+                                        style: const TextStyle(
+                                          color: Colors.indigoAccent,
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w800,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            : Container(),
+                        const SizedBox(height: 10),
+                        worker.phone != ""
+                            ? Container(
+                                padding: const EdgeInsets.all(3),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  border: Border.all(color: Colors.black54),
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: InkWell(
+                                  onTap: () async {
+                                    await launch(
+                                        "https://instagram.com/${worker.instagramProfile}");
+                                  },
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      const SizedBox(
+                                        height: 40,
+                                        child: Image(
+                                          image: AssetImage(
+                                              "assets/images/instagram_icon.jpg"),
+                                        ),
+                                      ),
+                                      const SizedBox(width: 10),
+                                      Text(
+                                        "${worker.instagramProfile}",
+                                        style: const TextStyle(
+                                          color: Colors.purple,
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w800,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            : Container(),
+                        const SizedBox(height: 10),
+                        worker.phone != ""
+                            ? Container(
+                                padding: const EdgeInsets.all(3),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  border: Border.all(color: Colors.black54),
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: InkWell(
+                                  onTap: () async {
+                                    await launch("https://${worker.site}");
+                                  },
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      const SizedBox(
+                                        height: 40,
+                                        child: Icon(
+                                          Icons.link,
+                                          color: Colors.deepPurple,
+                                        ),
+                                      ),
+                                      const SizedBox(width: 10),
+                                      Text(
+                                        "${worker.site}",
+                                        style: const TextStyle(
+                                          color: Colors.deepPurple,
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.w800,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            : Container(),
                       ],
                     ),
                   ],
@@ -208,7 +326,7 @@ class WorkersList extends StatelessWidget {
               children: [
                 Container(
                   padding: const EdgeInsets.all(5),
-                  height: MediaQuery.of(context).size.height * 1/4,
+                  height: MediaQuery.of(context).size.height * 1 / 4,
                   decoration: const BoxDecoration(
                     color: Colors.amber,
                     boxShadow: [

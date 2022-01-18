@@ -7,7 +7,7 @@ class WorksController extends ChangeNotifier{
 
   Future<List<WorkerModel>> getDataFromDB(String profession, String collection) async {
     try {
-      dataFromDB = await mainRepository. getDataFromDB(profession, collection);
+      dataFromDB = await mainRepository.getDataFromDB(profession, collection);
       notifyListeners();
     } catch (e) {
       print(e);

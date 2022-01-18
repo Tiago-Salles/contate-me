@@ -22,6 +22,8 @@ class BodyRegisterWork extends StatelessWidget {
     String email = "";
     String phone = "";
     String cellPhone = "";
+    String site = "";
+    String instagramProfile = "";
     String city = "";
     String service = "";
     String differential = "";
@@ -121,22 +123,21 @@ class BodyRegisterWork extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 2),
                 child: TextFormField(
                   onChanged: (value) {
-                    city = value;
+                    site = value;
                   },
                   decoration: const InputDecoration(
-                    labelText: "Site",
+                    labelText: "Site (opcional)",
                   ),
                 ),
               ),
               Container(
                 margin: const EdgeInsets.only(top: 2),
                 child: TextFormField(
-                  validator: (value) => validade(value),
                   onChanged: (value) {
-                    city = value;
+                    instagramProfile = value;
                   },
                   decoration: const InputDecoration(
-                    labelText: "Perfil empresarial no Instagram",
+                    labelText: "Perfil empresarial no Instagram (opcional)",
                   ),
                 ),
               ),
@@ -233,6 +234,8 @@ class BodyRegisterWork extends StatelessWidget {
                                   "email": email,
                                   "cellPhone": cellPhone,
                                   "phone": phone,
+                                  "site" : site,
+                                  "instagramProfile" : instagramProfile,
                                   "city": city,
                                   "service": service,
                                   "differential": differential,
@@ -240,7 +243,7 @@ class BodyRegisterWork extends StatelessWidget {
                                 },
                               ).then(
                                 (value) {
-                                  Navigator.pop(context);
+                                  Navigator.of(context).pushNamed("/home");
                                   return ScaffoldMessenger.of(context)
                                       .showSnackBar(
                                     const SnackBar(
@@ -261,7 +264,7 @@ class BodyRegisterWork extends StatelessWidget {
                                 ),
                               );
                             },
-                            child: Text("Sim"),
+                            child: const Text("Sim"),
                           )
                         ],
                       ),
