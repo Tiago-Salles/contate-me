@@ -9,6 +9,7 @@ class WorksController extends ChangeNotifier {
   Future<List<WorkerModel>> getDataFromDB(
       String profession, String collection) async {
     try {
+      const CircularProgressIndicator();
       dataFromDB = await mainRepository.getDataFromDB(profession, collection);
       notifyListeners();
     } catch (e) {

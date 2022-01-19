@@ -1,5 +1,6 @@
 import 'package:contate_me/models/worker_model.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class EachItemOfWorkersList extends StatefulWidget {
@@ -145,11 +146,9 @@ class _EachItemOfWorkersListState extends State<EachItemOfWorkersList> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const SizedBox(
-                        height: 40,
-                        child: Image(
-                          image: AssetImage("assets/images/whatsapp_icon.png"),
-                        ),
+                      const Center(
+                        child: FaIcon(FontAwesomeIcons.whatsapp,
+                            color: Colors.green),
                       ),
                       const SizedBox(width: 20),
                       Text(
@@ -179,17 +178,17 @@ class _EachItemOfWorkersListState extends State<EachItemOfWorkersList> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const SizedBox(
-                        height: 40,
-                        child: Image(
-                          image: AssetImage("assets/images/gmail_icon.png"),
+                      Center(
+                        child: Icon(
+                          Icons.mail,
+                          color: Colors.red[400],
                         ),
                       ),
                       const SizedBox(width: 10),
                       Text(
                         "${widget.worker.email}",
-                        style: const TextStyle(
-                          color: Colors.red,
+                        style: TextStyle(
+                          color: Colors.red[400],
                           fontSize: 15,
                           fontWeight: FontWeight.w800,
                         ),
@@ -252,12 +251,9 @@ class _EachItemOfWorkersListState extends State<EachItemOfWorkersList> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const SizedBox(
-                              height: 40,
-                              child: Image(
-                                image: AssetImage(
-                                    "assets/images/instagram_icon.jpg"),
-                              ),
+                            const Center(
+                              child: FaIcon(FontAwesomeIcons.instagram,
+                                  color: Colors.amber),
                             ),
                             const SizedBox(width: 10),
                             Text(

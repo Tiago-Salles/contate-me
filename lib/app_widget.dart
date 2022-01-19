@@ -1,11 +1,13 @@
 import 'package:contate_me/pages/home/home_controller.dart';
 import 'package:contate_me/pages/home/home_page.dart';
+import 'package:contate_me/pages/login/login_controller.dart';
+import 'package:contate_me/pages/login/login_page.dart';
+import 'package:contate_me/pages/splash/splash_page.dart';
 import 'package:contate_me/pages/works/works_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'headers/main_header.dart';
 import 'pages/register_work/register_work_page.dart';
-import 'pages/splash_page/splash_page.dart';
 import 'pages/works/works_controller.dart';
 
 class AppWidget extends StatelessWidget {
@@ -17,6 +19,7 @@ class AppWidget extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => WorksController()),
         ChangeNotifierProvider(create: (_) => HomeController()),
+        ChangeNotifierProvider(create: (_) => LoginController()),
       ],
       child: FutureBuilder(
         future: SplashPage.initializeApp(),
@@ -38,7 +41,7 @@ class AppWidget extends StatelessWidget {
               theme: ThemeData(
                 primarySwatch: Colors.blue,
               ),
-              home: const MainHeader(child: HomePage()),
+              home: const MainHeader(child: LoginPage()),
             );
           }
         },

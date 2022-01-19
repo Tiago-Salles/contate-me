@@ -16,11 +16,11 @@ class FieldWorks extends StatelessWidget {
       child: Form(
         key: _key,
         child: TextFormField(
-          validator: (value){
-            if(value == null || value.trim() == ""){
-             return "Por favor, pesquise um profissional";
-            }else{
-             return null;
+          validator: (value) {
+            if (value == null || value.trim() == "") {
+              return "Por favor, pesquise um profissional";
+            } else {
+              return null;
             }
           },
           onChanged: (_profession) {
@@ -51,17 +51,14 @@ class FieldWorks extends StatelessWidget {
                 onPressed: () {
                   if (_key.currentState!.validate()) {
                     Provider.of<WorksController>(context, listen: false)
-                      .getDataFromDB(profession, collection);
+                        .getDataFromDB(profession, collection);
                   }
                 },
                 color: Colors.amber,
                 icon: const Icon(Icons.search),
               ),
             ),
-            errorStyle: TextStyle(
-             color: Colors.red[200],
-             fontSize: 15
-            ),
+            errorStyle: TextStyle(color: Colors.red[200], fontSize: 15),
             labelText: "Qual profissional está procurando?",
             labelStyle: const TextStyle(color: Colors.white),
           ),
