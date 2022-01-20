@@ -24,7 +24,7 @@
     </queries>
 
    <application
-        android:label="contate_me"
+        android:label="Contate-me"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

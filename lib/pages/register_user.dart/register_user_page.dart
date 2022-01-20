@@ -3,15 +3,10 @@ import 'package:contate_me/pages/register_user/register_user_widgets/body_regist
 import 'package:flutter/material.dart';
 
 class RegisterUser extends StatelessWidget {
-  const RegisterUser({Key? key}) : super(key: key);
+  const RegisterUser({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MainHeader(
-      child: Padding(
-        padding: EdgeInsets.all(30),
-        child: BodyRegisterUser(),
-      ),
-    );
+    return const MainHeader(child: BodyRegisterUser());
   }
 }
