@@ -1,5 +1,4 @@
 import 'package:contate_me/infra/firestore_connection.dart';
-import 'package:contate_me/pages/register_work/register_work_bloc.dart';
 import 'package:flutter/material.dart';
 
 class BodyRegisterWork extends StatelessWidget {
@@ -234,8 +233,8 @@ class BodyRegisterWork extends StatelessWidget {
                                   "email": email,
                                   "cellPhone": cellPhone,
                                   "phone": phone,
-                                  "site" : site,
-                                  "instagramProfile" : instagramProfile,
+                                  "site": site,
+                                  "instagramProfile": instagramProfile,
                                   "city": city,
                                   "service": service,
                                   "differential": differential,
@@ -243,8 +242,8 @@ class BodyRegisterWork extends StatelessWidget {
                                 },
                               ).then(
                                 (value) {
-                                  Navigator.pop(context);
-                                  Navigator.pop(context);
+                                  Navigator.of(context)
+                                      .pushReplacementNamed("/home");
                                   return ScaffoldMessenger.of(context)
                                       .showSnackBar(
                                     const SnackBar(

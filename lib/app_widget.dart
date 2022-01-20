@@ -2,11 +2,13 @@ import 'package:contate_me/pages/home/home_controller.dart';
 import 'package:contate_me/pages/home/home_page.dart';
 import 'package:contate_me/pages/login/login_controller.dart';
 import 'package:contate_me/pages/login/login_page.dart';
+import 'package:contate_me/pages/register_user/register_user_page.dart';
 import 'package:contate_me/pages/splash/splash_page.dart';
 import 'package:contate_me/pages/works/works_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'headers/main_header.dart';
+import 'pages/register_user/register_user_controller.dart';
 import 'pages/register_work/register_work_page.dart';
 import 'pages/works/works_controller.dart';
 
@@ -20,6 +22,7 @@ class AppWidget extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => WorksController()),
         ChangeNotifierProvider(create: (_) => HomeController()),
         ChangeNotifierProvider(create: (_) => LoginController()),
+        ChangeNotifierProvider(create: (_) => RegisterUserController()),
       ],
       child: FutureBuilder(
         future: SplashPage.initializeApp(),
@@ -37,6 +40,8 @@ class AppWidget extends StatelessWidget {
                 "/home": (context) => const HomePage(),
                 "/work": (context) => const WorksPage(),
                 "/registerWork": (context) => const RegisterWorkPage(),
+                "/registerUser": (context) => const RegisterUser(),
+                "/login": (context) => const LoginPage(),
               },
               theme: ThemeData(
                 primarySwatch: Colors.blue,
