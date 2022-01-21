@@ -152,11 +152,11 @@ class BodyLogin extends StatelessWidget {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
                               duration: const Duration(seconds: 2),
-                              backgroundColor: Colors.amber[200],
+                              backgroundColor: Colors.green,
                               content: const Text(
                                 "Bom ter você por aqui!",
                                 style: TextStyle(
-                                  color: Colors.indigoAccent,
+                                  color: Colors.white,
                                   fontSize: 15,
                                   fontWeight: FontWeight.w900,
                                 ),

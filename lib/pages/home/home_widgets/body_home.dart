@@ -106,7 +106,7 @@ class _BodyHomeState extends State<BodyHome> {
               title: "Editar meu cadastro",
               subtitle: "Por aqui você edita seu cadastro",
               icon: Icons.supervised_user_circle,
-              route: "",
+              route: "/editRegistrarion",
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.25,

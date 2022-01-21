@@ -23,7 +23,7 @@ class ButtonHome extends StatelessWidget {
         ),
         tileColor: Colors.amber[300],
         onTap: (){
-             Navigator.of(context).pushNamed(route);
+             Navigator.of(context).pushReplacementNamed(route);
         },
         title: Text(title, 
         style: const TextStyle(
