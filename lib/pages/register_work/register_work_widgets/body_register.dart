@@ -48,7 +48,7 @@ class BodyRegisterWork extends StatelessWidget {
                       child: IconButton(
                         color: Colors.amber,
                         onPressed: () {
-                          Navigator.pop(context);
+                          Navigator.of(context).pushNamed("/home");
                         },
                         icon: const Icon(Icons.arrow_back),
                       ),

@@ -8,8 +8,10 @@ class HomeController extends ChangeNotifier {
     XFile? _image;
     try {
       _image = await ImagePicker().pickImage(source: ImageSource.gallery);
-      image = File(_image!.path);
-      notifyListeners();
+      if(_image?.path != null){
+       image = File(_image!.path);
+       notifyListeners();
+      }
     } on PlatformException catch (e) {
       print(e.message);
     }
