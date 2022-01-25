@@ -160,7 +160,7 @@ class BodyEditRegistration extends StatelessWidget {
                           style: TextStyle(
                             fontWeight: FontWeight.w400,
                             color: Colors.white,
-                            fontSize: 25,
+                            fontSize: 20,
                           ),
                         ),
                       ),

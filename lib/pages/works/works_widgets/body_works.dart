@@ -25,8 +25,8 @@ class BodyWorks extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 IconButton(
-                  onPressed: () {
-                    Navigator.pop(context);
+                  onPressed: () async{
+                    await Navigator.of(context).pushReplacementNamed("/home");
                   },
                   iconSize: 25,
                   color: Colors.amber,

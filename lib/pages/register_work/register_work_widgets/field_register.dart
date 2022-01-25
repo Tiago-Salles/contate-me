@@ -11,7 +11,6 @@ class TextFormFieldHelper extends StatelessWidget{
     return Container(
       margin: const EdgeInsets.only(top:2),
       child: TextFormField(
-        initialValue: RegisterWorkBloc().value(),
         onChanged: (value) {
         },
         //   RegisteredService(

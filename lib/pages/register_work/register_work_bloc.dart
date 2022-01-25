@@ -1,20 +1,12 @@
-import 'dart:async';
+import 'package:contate_me/infra/firestore_connection.dart';
 
-import 'package:contate_me/repositories/service_repository.dart';
-class RegisterWorkBloc{
-  ServiceRepository mainRepository = ServiceRepository();
-  StreamController<Map<String, String>> responses = StreamController();
-  Sink<Map<String, String>> get inputResponse => responses.sink;
-  Stream<Map<String, String>> get outputResponse => responses.stream;
-  final List<String> responsesList = [];
-
-  void setResponse(String response){
-    responsesList.add(response);
+class RegisterWorkBloc {
+  Future<void> submitResponse(
+      Map<String, String> json, String profession, String peopleName) async {
+   await FireStoreConnection.servicesDBCollection
+        .doc(profession)
+        .collection("users")
+        .doc(peopleName)
+        .set(json);
   }
-
-  void setDataOnDB() {
-    Map<String, String> _responses = {};
-    int index = 1;
-  }
-  String value({String? value}) => value ?? "";
 }

@@ -1,4 +1,6 @@
 import 'package:contate_me/infra/firestore_connection.dart';
+import 'package:contate_me/models/worker_model.dart';
+import 'package:contate_me/pages/register_work/register_work_bloc.dart';
 import 'package:flutter/material.dart';
 
 class BodyRegisterWork extends StatelessWidget {
@@ -15,6 +17,8 @@ class BodyRegisterWork extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     GlobalKey<FormState> _key = GlobalKey<FormState>();
+    WorkerModel workerModel = WorkerModel();
+    RegisterWorkBloc registerWorkBloc = RegisterWorkBloc();
 
     String profession = "";
     String peopleName = "";
@@ -221,26 +225,28 @@ class BodyRegisterWork extends StatelessWidget {
                             ),
                           ),
                           TextButton(
-                            onPressed: () {
-                              FireStoreConnection.servicesDBCollection
-                                  .doc(profession)
-                                  .collection("users")
-                                  .doc(peopleName)
-                                  .set(
-                                {
-                                  "profession": profession,
-                                  "name": peopleName,
-                                  "email": email,
-                                  "cellPhone": cellPhone,
-                                  "phone": phone,
-                                  "site": site,
-                                  "instagramProfile": instagramProfile,
-                                  "city": city,
-                                  "service": service,
-                                  "differential": differential,
-                                  "userMessage": userMessage,
-                                },
-                              ).then(
+                            onPressed: () async {
+                              await registerWorkBloc
+                                  .submitResponse(
+                                workerModel.toJson(
+                                  WorkerModel(
+                                    site: site,
+                                    instagramProfile: instagramProfile,
+                                    cellPhone: cellPhone,
+                                    city: city,
+                                    differential: differential,
+                                    email: email,
+                                    name: peopleName,
+                                    phone: phone,
+                                    profession: profession,
+                                    service: service,
+                                    userMessage: userMessage,
+                                  ),
+                                ),
+                                profession,
+                                peopleName,
+                              )
+                                  .then(
                                 (value) {
                                   Navigator.of(context)
                                       .pushReplacementNamed("/home");
@@ -286,7 +292,7 @@ class BodyRegisterWork extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.w400,
                         color: Colors.white,
-                        fontSize: 25,
+                        fontSize: 20,
                       ),
                     ),
                   ),

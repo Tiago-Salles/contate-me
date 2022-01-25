@@ -15,7 +15,9 @@ class WorkerModel{
   WorkerModel({
     this.name, 
     this.email, 
-    this.phone, 
+    this.phone,
+    this.site,
+    this.instagramProfile, 
     this.city, 
     this.profession, 
     this.service, 
@@ -37,5 +39,20 @@ class WorkerModel{
     differential = json["differential"] as String;
     userMessage = json["userMessage"] as String;
   }
+
+
+  Map<String, String> toJson(WorkerModel workerModel) => {
+    "name" : "${workerModel.name}",
+    "email" : "${workerModel.email}",
+    "phone" : "${workerModel.phone}",
+    "cellPhone" : "${workerModel.cellPhone}",
+    "site" : "${workerModel.site}",
+    "instagramProfile" : "${workerModel.instagramProfile}",
+    "city" : "${workerModel.city}",
+    "profession" : "${workerModel.profession}",
+    "service" : "${workerModel.service}",
+    "differential" : "${workerModel.differential}",
+    "userMessage" : "${workerModel.userMessage}",
+  };
 
 }
