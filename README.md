@@ -1,10 +1,5 @@
 # contate-me
 
-<div align="center">
-<img src="https://desblogada.files.wordpress.com/2021/05/kaka-cordovil-java-developer-2.gif" width="700px" />
-</div>
-
-
 <span align="start">
 <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"> Welcome to Contate-me repository! </h2><br><br>
 </span>
