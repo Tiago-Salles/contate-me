@@ -9,12 +9,12 @@
 </p>
 
 <p align="center">
-  All files are in <strong>development branch.</strong><br />
+  All files are in <strong>development branch.</strong><br /><br>
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/tiago-salles-b56a131a7/" alt="Linkedin">
-  <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/keidsonroby/" /></a>
+  <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/keidsonroby/" /></a><br>
 </p>  
 
 <p align="center">
