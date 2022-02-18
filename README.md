@@ -3,8 +3,14 @@
 This app is a work mural.
 
 <span align="center">
-## <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"> Bem vindo ao repositório do Contate-me! </h2>
+<img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"> Bem vindo ao repositório do Contate-me! </h2>
 </span>
+
+<p align="center">
+  Heey! So good to see you here. <br>I'm Kaká, the great <strong>problem solver</strong>! <br> I am a <strong>developer</strong> also, and I'm doing my master in <strong>Computer Engineer</strong>.<br />
+<strong>Start to developing </strong>bring me<strong> life and dreams </strong>about who <strong>I want to be</strong> and what <strong>I want to do</strong>.
+
+</p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/tiago-salles-b56a131a7/" alt="Linkedin">
