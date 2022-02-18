@@ -6,6 +6,18 @@
 </span>
 
 <p align="center">
+  💼 Skills: <strong>Overcome obstacles with a big smile.</strong>
+</p>
+
+<p align="center">
+  👩‍💻  Stack: <strong>Backend Java, Frontend JavaScript, HTML, CSS and React.</strong>
+</p>
+
+<p align="center">
+  🚀  Learning: <strong>Java, C++, JavaScript, PHP, Typescript, React, Webflux, Go, SASS, UI, UX.</strong>
+</p>
+
+<p align="center">
 I'm Tiago and i want to share with you my main project<br>I am a <strong>developer.</strong> This app is a services mural, with Contate-me self-employeds can share their services and be contacted in one click<br>
 </p>
 
