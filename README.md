@@ -6,8 +6,11 @@
 </span>
 
 <p align="start">
-This app is a services mural, with Contate-me self-employeds can share their services and be contacted in one click<br>I'm Tiago and i want share with you my principal project</strong>! <br> I am a <strong>Flutter developer</strong>
+I'm Tiago and i want share with you my principal project<br>I am a <strong>developer</strong>This app is a services mural, with Contate-me self-employeds can share their services and be contacted in one click<br>
 </p>
+
+
+
 
 <p align="center">
   <a href="https://www.linkedin.com/in/tiago-salles-b56a131a7/" alt="Linkedin">
