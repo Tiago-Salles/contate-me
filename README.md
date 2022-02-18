@@ -1,23 +1,20 @@
 # contate-me
 
 
-<span align="center">
+<span align="start">
 <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"> Welcome to Contate-me repository! </h2>
 </span>
 
-<p align="start">
-I'm Tiago and i want share with you my principal project<br>I am a <strong>developer</strong>This app is a services mural, with Contate-me self-employeds can share their services and be contacted in one click<br>
+<p align="center">
+I'm Tiago and i want share with you my principal project<br>I am a <strong>developer.</strong> This app is a services mural, with Contate-me self-employeds can share their services and be contacted in one click<br>
 </p>
-
-
-
 
 <p align="center">
   <a href="https://www.linkedin.com/in/tiago-salles-b56a131a7/" alt="Linkedin">
   <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/keidsonroby/" /></a>
 </p>  
 
-<p align="start">
+<p align="center">
  
  <img src="https://user-images.githubusercontent.com/73372510/154747880-ca56efcc-a591-4adf-be41-7d40dbc8765e.png" height="500"/>
  <img src="https://user-images.githubusercontent.com/73372510/154747874-35333bbe-869e-493d-8923-d21301d8c66c.png" height="500"/> 
