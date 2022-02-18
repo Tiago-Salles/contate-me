@@ -6,6 +6,12 @@
 </span>
 
 <p align="center">
+  I am Tiago and i want to share with you my main project<br> I am a <strong>developer</strong> This app is a services mural, with Contate-me self-employeds can publish your services and be contacted with one click <br />
+<strong>Start to developing </strong>bring me<strong> life and dreams </strong>about who <strong>I want to be</strong> and what <strong>I want to do</strong>.
+
+</p>
+
+<p align="center">
   <a href="https://www.linkedin.com/in/tiago-salles-b56a131a7/" alt="Linkedin">
   <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/keidsonroby/" /></a>
 </p>  
