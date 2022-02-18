@@ -2,7 +2,7 @@
 
 
 <span align="start">
-<img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"> Welcome to Contate-me repository! </h2>
+<img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"> Welcome to Contate-me repository! </h2><br><br>
 </span>
 
 <p align="center">
