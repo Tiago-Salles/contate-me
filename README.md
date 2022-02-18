@@ -2,12 +2,21 @@
 
 
 <span align="center">
-<img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"> Bem vindo ao repositório do Contate-me! </h2>
+<img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"> Welcome to Contate-me repository! </h2>
 </span>
 
+
+
+
 <p align="center">
-This app is a work mural. <br>I'm Tiago and i want share with you my principal project</strong>! <br> \n I am a <strong>Flutter developer</strong>
+This app is a services mural, with Contate-me self-employeds can share their services and be contacted in one click<br>I'm Tiago and i want share with you my principal project</strong>! <br> \n I am a <strong>Flutter developer</strong>
 </p>
+
+
+
+
+
+
 
 <p align="center">
   <a href="https://www.linkedin.com/in/tiago-salles-b56a131a7/" alt="Linkedin">
