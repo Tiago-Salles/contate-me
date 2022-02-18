@@ -6,9 +6,11 @@
 </span>
 
 <p align="center">
-  I am Tiago and i want to share with you my main project<br> I am a <strong>developer</strong> This app is a services mural, with Contate-me self-employeds can publish your services and be contacted with one click <br />
-<strong>Start to developing </strong>bring me<strong> life and dreams </strong>about who <strong>I want to be</strong> and what <strong>I want to do</strong>.
+  I am Tiago and i want to share with you my main project<br> I am a <strong>developer</strong> <br>This app is a services mural, with Contate-me self-employeds can publish your services and be contacted with one click <br />
+</p>
 
+<p align="center">
+  All files are in <br><strong>development branch.</strong><br />
 </p>
 
 <p align="center">
