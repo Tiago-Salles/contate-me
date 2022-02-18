@@ -1,15 +1,12 @@
 # contate-me
 
-This app is a work mural.
 
 <span align="center">
 <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px"> Bem vindo ao repositório do Contate-me! </h2>
 </span>
 
 <p align="center">
-  Heey! So good to see you here. <br>I'm Kaká, the great <strong>problem solver</strong>! <br> I am a <strong>developer</strong> also, and I'm doing my master in <strong>Computer Engineer</strong>.<br />
-<strong>Start to developing </strong>bring me<strong> life and dreams </strong>about who <strong>I want to be</strong> and what <strong>I want to do</strong>.
-
+This app is a work mural. <br>I'm Tiago and i want share with you my principal project</strong>! <br> \n I am a <strong>Flutter developer</strong>
 </p>
 
 <p align="center">
