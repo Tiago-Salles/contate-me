@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  All files are in <br><strong>development branch.</strong><br />
+  All files are in<strong>development branch.</strong><br />
 </p>
 
 <p align="center">
