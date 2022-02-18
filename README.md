@@ -6,11 +6,11 @@
 </span>
 
 <p align="center">
-  I am Tiago and i want to share with you my main project<br> I am a <strong>developer</strong> <br>This app is a services mural, with Contate-me self-employeds can publish your services and be contacted with one click <br />
+  I am Tiago, i am a <strong>developer</strong> and i want to share with you my main project<br><br>This app is a services mural, with Contate-me self-employeds can publish your services and be contacted with one click <br />
 </p>
 
 <p align="center">
-  All files are in<strong>development branch.</strong><br />
+  All files are in <strong>development branch.</strong><br />
 </p>
 
 <p align="center">
