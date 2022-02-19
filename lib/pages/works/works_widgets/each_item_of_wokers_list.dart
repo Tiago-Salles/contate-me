@@ -16,6 +16,10 @@ class EachItemOfWorkersList extends StatefulWidget {
 }
 
 class _EachItemOfWorkersListState extends State<EachItemOfWorkersList> {
+
+  //ignore: todo
+  //TODO: Apply good practices and new features in this file
+
   launchToWhatsApp(String phone) async {
     String whatsappMenssager =
         "Olá, te encontrei no app Contate-me e gostaria de saber mais sobre seus serviços.";

@@ -4,6 +4,10 @@ import 'package:flutter/material.dart';
 class BodyRegisterUser extends StatelessWidget {
   const BodyRegisterUser({Key? key}) : super(key: key);
 
+  //ignore: todo
+  //TODO: Apply good practices and new features in this file
+  //Create model to register user
+
   validade(String? value) {
     if (value == null || value.trim() == "") {
       return "Este campo é obrigatório";

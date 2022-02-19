@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'field_works.dart';
 import 'workers_list.dart';
 
 class BodyWorks extends StatelessWidget {
   final String collection;
   const BodyWorks({Key? key, required this.collection}) : super(key: key);
+
+  //ignore: todo
+  //TODO: Apply good practices and new features in this file
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class BodyWorks extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 IconButton(
-                  onPressed: () async{
+                  onPressed: () async {
                     await Navigator.of(context).pushReplacementNamed("/home");
                   },
                   iconSize: 25,

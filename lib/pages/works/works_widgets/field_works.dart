@@ -1,4 +1,4 @@
-import 'package:contate_me/pages/works/works_controller.dart';
+import 'package:contate_me/pages/works/works_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -9,6 +9,7 @@ class FieldWorks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     late String profession;
+    final worksBloc = Provider.of<WorksBloc>(context, listen: false);
     GlobalKey<FormState> _key = GlobalKey<FormState>();
 
     return Padding(
@@ -50,8 +51,7 @@ class FieldWorks extends StatelessWidget {
               child: IconButton(
                 onPressed: () {
                   if (_key.currentState!.validate()) {
-                    Provider.of<WorksController>(context, listen: false)
-                        .getDataFromDB(profession, collection);
+                    worksBloc.getDataFromDB(profession, collection);
                   }
                 },
                 color: Colors.amber,

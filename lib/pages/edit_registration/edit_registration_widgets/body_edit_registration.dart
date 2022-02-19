@@ -1,5 +1,4 @@
 import 'package:contate_me/infra/firestore_connection.dart';
-import 'package:contate_me/pages/login/login_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -15,6 +14,9 @@ class BodyEditRegistration extends StatelessWidget {
       return null;
     }
   }
+
+  //ignore: todo
+  //TODO: Apply good practices and new features in this file
 
   @override
   Widget build(BuildContext context) {

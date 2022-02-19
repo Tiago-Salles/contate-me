@@ -1,10 +1,13 @@
-import 'package:contate_me/infra/firestore_connection.dart';
 import 'package:contate_me/models/worker_model.dart';
 import 'package:contate_me/pages/register_work/register_work_bloc.dart';
 import 'package:flutter/material.dart';
 
 class BodyRegisterWork extends StatelessWidget {
   const BodyRegisterWork({Key? key}) : super(key: key);
+
+  //ignore: todo
+  //TODO: Apply good practices and new features in this file
+  //Componentize the TextFormFields 
 
   validade(String? value) {
     if (value == null || value.trim() == "") {

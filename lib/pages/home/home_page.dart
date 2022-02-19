@@ -7,6 +7,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MainHeader(child: BodyHome());
+    return MainHeader(child: BodyHome());
   }
 }

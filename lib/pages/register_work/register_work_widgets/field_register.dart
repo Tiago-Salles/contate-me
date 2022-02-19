@@ -13,14 +13,6 @@ class TextFormFieldHelper extends StatelessWidget{
       child: TextFormField(
         onChanged: (value) {
         },
-        //   RegisteredService(
-        //     city: hintText.contains("cidade") ? value : "",
-        //     differential: hintText.contains("diferencial") ? value : "",
-        //     peopleName: hintText.contains("nome") ? value : "",
-        //     messengerUser: hintText.contains("mensagem") ? value : "",
-        //     service: hintText.contains("servi'co") ? value : "",
-        //     );
-        // },
         decoration: InputDecoration(
           labelText: hintText,
         ),
